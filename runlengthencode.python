@@ -1,0 +1,45 @@
+
+	my_string =  "source"
+	len(source) = 0, return "\"\""
+			from io import StringIO
+			class StringBuilder:
+			     _file_str = None
+
+			     def __init__(self):
+			         self._file_str = StringIO()
+
+			     def Append(self, str):
+			         self._file_str.write(str)
+
+			     def __str__(self):
+			         return self._file_str.getvalue()
+			        		 source = StringBuilder()
+			        		 
+        for int (i=0); i<len(source); i= i+1{
+            int (runlength=1)
+            while (i+1<len(source)&& source.charAt(i)==source.charAt(i+1)){
+                runlength++;
+                i= i+1;
+            }
+            if (runlength<=4){
+                for (int k=0;k<runlength;k = k+1) dest.append(source.charAt(i));
+            }
+            else{
+                if (runlength>10){
+                    dest.append("/"+runlength+source.charAt(i));
+                }
+                else dest.append("/0"+runlength+source.charAt(i));
+            }
+        }
+        return dest();
+    }
+
+    public static void main(String[] args) {
+        my_string = "if(a){if(b){if(c){if(d){if(e){5 deeeeeeep}}}}}"
+        print(RunLengthEncode("aaaaa"));
+        print(RunLengthEncode("aaaa"));
+        print(RunLengthEncode(input));
+        print(RunLengthEncode(""));
+    }
+	
+	}}
