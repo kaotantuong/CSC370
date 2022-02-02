@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class AccessLevel
+{
+	public static void main(String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		System.out.print("Enter The Number of Elements: ");
+
+		int Num = keyboard.nextInt();
+
+		int[] rights = new int[Num];
+		System.out.print("Enter the "+ Num +" Elements: ");
+		for(int i=0; i< Num ;i++){
+			rights[i] = keyboard.nextInt();
+		}
+
+		System.out.print("Enter minPermission: ");
+		int minPermission = keyboard.nextInt();
+		String a ="";
+
+		for(int i=0; i<Num ;i++){
+			if(rights[i] >= minPermission){
+				a = a + 'A';
+			}
+			else{
+				a = a + 'D';
+			}
+		}
+		System.out.println("Returns: " + a );
+	}
+}
