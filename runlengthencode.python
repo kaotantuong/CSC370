@@ -33,7 +33,7 @@
         }
         return dest();
     }
-
+    
     public static void main(String[] args) {
         my_string = "if(a){if(b){if(c){if(d){if(e){5 deeeeeeep}}}}}"
         print(RunLengthEncode("aaaaa"));
@@ -41,8 +41,7 @@
         print(RunLengthEncode(input));
         print(RunLengthEncode(""));
     }
-	
-	}}
+}}
 
 
 Cites: https://www.studytonight.com/python/python-static-keyword
